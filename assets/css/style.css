@@ -8,19 +8,19 @@ body {
     overflow-y: visible;
     scroll-behavior: smooth;
 }
-
 /* Navbar Custom */
-.navbar {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 .navbar-custom a {
-    color: white;
+    color:white;
 }
-.navbar-custom a:hover {
-    color: rgba(0, 0, 0, 0.747);
-    border-bottom: 1px solid white;
+.navbar-custom a:hover{
+     color:#FFFFFF;
+     border-bottom: 1px solid white;
+
 }
 .navbar-custom a .active {
-    color: rgba(0, 0, 0, 0.747);
+    color: rgba(1, 1, 1, 0.747);
     border-bottom: 1px solid white;
+}
+.navbar-toggler{
+    color: #FFFFFF;
 }
