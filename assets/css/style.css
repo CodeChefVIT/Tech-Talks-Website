@@ -7,8 +7,13 @@ body {
     overflow-x: hidden;
     overflow-y: visible;
     scroll-behavior: smooth;
+
 }
 /* Navbar Custom */
+.navbar-custom
+{
+overflow: auto;
+}
 .navbar-custom a {
     color:white;
 }
@@ -22,5 +27,50 @@ body {
     border-bottom: 1px solid white;
 }
 .navbar-toggler{
-    color: #FFFFFF;
+	color: #FFFFFF;
 }
+/* Section Header Image */
+.header-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("../images/Thumbnail3.png");
+
+    width: 100vw;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    /*background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    background-size: cover;
+    /* border: 3px solid #f1f1f1;*/
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+}
+.bg-text .ml3{
+    font-size: 80px;
+    color: #67bad9;
+    font-weight: 1000;
+}
+.bg-text .ml4{
+    font-size: 60px;
+    color: #67bad9;
+    font-weight: 1000;
+}
+
+ /*Footer Starts*/
+
+
+
+/*Footer Ends*/
