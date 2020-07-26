@@ -33,14 +33,15 @@ overflow: auto;
 .header-img {
     background: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
-        url("../images/Thumbnail3.png");
+        url("../images/poster.png");
 
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     
     background-repeat: no-repeat;
     background-size:100% 100%;
     position: relative;
+    z-index: 1;
 }
 
 /* Position text in the middle of the page/image */
@@ -50,26 +51,41 @@ overflow: auto;
     background-size: cover;
     /* border: 3px solid #f1f1f1;*/
     position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height:100vh;
+    top: 0;
+    left: 0;
     z-index: 2;
-    width: 70%;
+    width: 100vw;
     padding: 20px;
     text-align: center;
 }
 .bg-text .ml3{
-    font-size: 80px;
+    margin-top: 4%;
+    font-size: 5vw;
     color: #67bad9;
     font-weight: 1000;
 }
 .bg-text .ml4{
-    font-size: 60px;
+    font-size: 4.5vw;
     color: #67bad9;
     font-weight: 1000;
 }
+@media (max-width: 430px){
+    .bg-text .ml3{
+    margin-top: 20%;
+    font-size: 13vw;
+    color: #67bad9;
+    font-weight: 800;
+}
+.bg-text .ml4{
+    font-size: 10vw;
+    color: #67bad9;
+    font-weight: 800;
+}
+}
 
  /*Footer Starts*/
+
 
 
 
