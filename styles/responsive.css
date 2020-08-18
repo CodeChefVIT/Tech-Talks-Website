@@ -1,0 +1,380 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+	.main_nav
+	{
+		margin-left: 75px;
+	}
+	.main_nav > ul > li:not(:last-of-type)
+	{
+		margin-right: 32px;
+	}
+	.header .social
+	{
+		margin-right: 41px;
+	}
+	.log_reg
+	{
+		margin-right: 43px;
+	}
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+	.header .social
+	{
+		display: none;
+	}
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+	
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+	
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+	.header_content
+	{
+		padding-left: 30px;
+	}
+	.main_nav
+	{
+		margin-left: 45px;
+	}
+	.header_link
+	{
+		display: none;
+	}
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+	
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+	
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+	.main_nav
+	{
+		display: none;
+	}
+	.header_content
+	{
+		padding-right: 30px;
+	}
+	.hamburger
+	{
+		display: block;
+	}
+	.home_title h1 span
+	{
+		font-size: 72px;
+	}
+	.home_info ul li,
+	.home_info ul li:not(:last-of-type)::after
+	{
+		font-size: 24px;
+	}
+	.timer_container
+	{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.tab
+	{
+		-webkit-flex-grow: 0;
+		flex-grow: 0;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.tab_col
+	{
+		margin-top: 60px;
+	}
+	.schedule_col:not(:last-child)
+	{
+		margin-bottom: 40px;
+	}
+	.footer_column
+	{
+		padding-top: 0;
+	}
+	.footer_col:not(:last-child)
+	{
+		margin-bottom: 80px;
+	}
+}
+
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+	
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+	
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+	
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+	h1
+	{
+		font-size: 48px;
+	}
+	.home_title h1 span
+	{
+		font-size: 56px;
+	}
+	.timer_num,
+	.timer li:not(:last-of-type)::after
+	{
+		font-size: 48px;
+	}
+}
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+	h1
+	{
+		font-size: 36px;
+	}
+	h3
+	{
+		font-size: 24px;
+	}
+	p
+	{
+		font-size: 14px;
+	}
+	.header_content
+	{
+		height: 75px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.header.scrolled .header_content
+	{
+		height: 75px;
+	}
+	.logo a > span
+	{
+		font-size: 24px;
+	}
+	.logo a > span:last-of-type
+	{
+		font-size: 8px;
+		margin-left: 3px;
+	}
+	.log_reg ul li a
+	{
+		font-size: 14px;
+	}
+	.log_reg ul li:not(:last-of-type)::after
+	{
+		font-size: 14px;
+	}
+	.log_reg
+	{
+		margin-right: 30px;
+	}
+	.button
+	{
+		width: 180px;
+		height: 53px;
+	}
+	.button a
+	{
+		font-size: 12px;
+		line-height: 53px;
+	}
+	.home_title h1 span
+	{
+		font-size: 48px;
+	}
+	.home_info ul li,
+	.home_info ul li:not(:last-of-type)::after
+	{
+		font-size: 18px;
+	}
+	.home_info
+	{
+		height: 43px;
+	}
+	.home_button
+	{
+		margin-top: 46px;
+	}
+	.home_slider_dots_container
+	{
+		display: none;
+	}
+	.timer_num,
+	.timer li:not(:last-of-type)::after
+	{
+		font-size: 36px;
+	}
+	.timer_unit
+	{
+		font-size: 14px;
+	}
+	.intro_text p
+	{
+		font-size: 16px;
+	}
+	.tab
+	{
+		font-size: 14px;
+		height: 47px;
+		line-height: 47px;
+	}
+	.tab_text
+	{
+		margin-top: 16px;
+	}
+	.schedule_info
+	{
+		font-size: 14px;
+	}
+	.schedule_list::before
+	{
+		width: 98px;
+	}
+	.schedule_content
+	{
+		padding-left: 45px;
+	}
+	.schedule_list ul li
+	{
+		padding-left: 15px;
+	}
+	.cta_text p
+	{
+		font-size: 16px;
+	}
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+	
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+	
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+	
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+	
+}
