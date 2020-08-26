@@ -13,7 +13,6 @@
 6. Timer
 7. Intro
 8. Tabs Section
-9. Schedule
 10. Speakers
 11. CTA
 12. Footer
@@ -137,7 +136,7 @@ h1, h2, h3, h4, h5, h6
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	line-height: 1.2;
-	color: #0a2642;
+	color: white;
 	font-weight: 700;
 }
 h1::selection, 
@@ -280,6 +279,19 @@ section
 {
 	height: 100%;
 }
+.background_image
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media screen and (max-width: 780px)
+{
+	.slide .background_image
+	{
+		right: 0;
+	}
+}
 .button
 {
 	display: inline-block;
@@ -318,9 +330,9 @@ section
 	height: 3px;
 	content: '';
 }
-.button_1::after
+.button_1::hover
 {
-	background: #7f66ff;
+	background: #67bad9;
 }
 .button_2::after
 {
@@ -360,26 +372,7 @@ section
 {
 	color: #ffffff;
 }
-.button a img
-{
-	display: inline-block !important;
-	width: auto !important;
-	margin-left: 8px;
-	margin-bottom: 3px;
-	-webkit-transition: all 700ms ease;
-	-moz-transition: all 700ms ease;
-	-ms-transition: all 700ms ease;
-	-o-transition: all 700ms ease;
-	transition: all 700ms ease;
-}
-.button:hover a img
-{
-	-webkit-transform: translateX(5px);
-	-moz-transform: translateX(5px);
-	-ms-transform: translateX(5px);
-	-o-transform: translateX(5px);
-	transform: translateX(5px);
-}
+
 .section_subtitle
 {
 	font-size: 13px;
@@ -394,6 +387,11 @@ section
 {
 	margin-top: 7px;
 }
+.temp
+{
+	margin-left: 250px;
+
+}
 
 /*********************************
 3. Header
@@ -407,7 +405,7 @@ section
 	width: calc(100% - 48px);
 	background: #0a2642;
 	z-index: 100;
-	border-bottom: solid 2px #7f66ff;
+	border-bottom: solid 2px #67bad9;
 }
 .header_content
 {
@@ -487,7 +485,7 @@ section
 }
 .main_nav > ul > li.active.has_children > a::after
 {
-	color: #7f66ff;
+	color: #67bad9;
 }
 .main_nav > ul > li:not(:last-of-type)
 {
@@ -504,7 +502,7 @@ section
 .main_nav > ul > li.active a,
 .main_nav > ul > li > a:hover::after
 {
-	color: #7f66ff;
+	color: #67bad9;
 }
 .main_nav ul li > ul
 {
@@ -538,7 +536,7 @@ section
 }
 .main_nav ul li > ul > li a
 {
-	color: #7f66ff;
+	color: #67bad9;
 }
 .main_nav ul li > ul > li a:hover
 {
@@ -649,7 +647,7 @@ section
 }
 .social ul li:hover
 {
-	background: #7f66ff;
+	background: #67bad9;
 }
 .social ul li a
 {
@@ -756,7 +754,7 @@ section
 }
 .menu_close:hover i
 {
-	color: #7f66ff;
+	color: #67bad9;
 }
 .menu_content
 {
@@ -784,7 +782,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #7f66ff;
+	color: #67bad9;
 }
 .menu_social
 {
@@ -814,7 +812,7 @@ section
 .home_container
 {
 	position: absolute;
-	top: 51.5%;
+	top: 59.5%;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
@@ -834,11 +832,11 @@ section
 	font-weight: 700;
 	color: #ffffff;
 	line-height: 1;
-	font-style: italic;
+	
 }
 .home_title h1 span:first-of-type
 {
-	color: #ff9000;
+	color: black;
 }
 .home_info_container
 {
@@ -850,7 +848,7 @@ section
 	height: 49px;
 	padding-left: 22px;
 	padding-right: 24px;
-	background: #7f66ff;
+	background: #67bad9;
 }
 .home_info ul
 {
@@ -877,44 +875,7 @@ section
 {
 	margin-top: 60px;
 }
-.home_slider_dots_container
-{
-	position: absolute;
-	left: 0;
-	bottom: 27px;
-	width: 100%;
-	z-index: 1;
-}
-.home_slider_custom_dot:not(:last-child)
-{
-	margin-right: 3px;
-}
-.home_slider_custom_dot
-{
-	width: 43px;
-	height: 43px;
-	background: transparent;
-	text-align: center;
-	line-height: 43px;
-	font-size: 16px;
-	font-weight: 700;
-	color: #ffffff;
-	cursor: pointer;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.home_slider_custom_dot.active,
-.home_slider_custom_dot:hover
-{
-	background: #7f66ff;
-}
-.home_slider .owl-dots
-{
-	display: none;
-}
+
 
 /*********************************
 6. Timer
@@ -931,7 +892,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(127,102,255,0.88);
+	background: rgba(103,186,217,0.88);
 }
 .timer_container
 {
@@ -987,13 +948,14 @@ section
 
 .intro
 {
-	background: #f5f8fb;
+	background: #0f3152;
 	padding-top: 92px;
 	padding-bottom: 102px;
 }
 .intro .section_title
 {
 	margin-top: 0;
+	color: white;
 }
 .intro_text
 {
@@ -1014,12 +976,12 @@ section
 }
 
 /*********************************
-8. Tabs Section
+8. Tabs Section#153758
 *********************************/
 
 .tabs_section
 {
-	background: #ffffff;
+	background: #0f3152;
 	padding-top: 103px;
 	padding-bottom: 71px;
 }
@@ -1049,8 +1011,8 @@ section
 }
 .tab:hover
 {
-	background: #7f66ff;
-	color: #ffffff;
+	background:#ffffff ;
+	color: #67bad9;
 }
 .tab:not(:last-child)
 {
@@ -1058,7 +1020,7 @@ section
 }
 .tab.active
 {
-	background: #7f66ff;
+	background: #67bad9;
 	color: #ffffff;
 }
 .tab_panels
@@ -1099,6 +1061,8 @@ section
 .tab_text
 {
 	margin-top: 20px;
+	color: #ffffff;
+
 }
 .tab_text p
 {
@@ -1124,7 +1088,7 @@ section
 {
 	font-size: 14px;
 	font-weight: 700;
-	color: #7f66ff;
+	color: #ffffff;
 	text-decoration: underline;
 }
 .tab_link a:hover
@@ -1132,114 +1096,7 @@ section
 	color: #ff9000;
 }
 
-/*********************************
-9. Schedule
-*********************************/
 
-.schedule
-{
-	background: #ffffff;
-	padding-bottom: 106px;
-}
-.schedule_row
-{
-	margin-top: 58px;
-}
-.schedule_container
-{
-	border: solid 1px #cbd6e1;
-}
-.schedule_title_bar
-{
-	height: 112px;
-	line-height: 112px;
-	font-size: 24px;
-	font-weight: 700;
-	color: #ffffff;
-}
-.schedule_title_bar span
-{
-	font-size: 16px;
-	font-weight: 400;
-	margin-left: 8px;
-}
-.schedule_title_bar_1
-{
-	background: #7f66ff;
-}
-.schedule_title_bar_2
-{
-	background: #ff9000;
-}
-.schedule_list
-{
-	padding-top: 45px;
-	padding-bottom: 76px;
-}
-.schedule_list::before
-{
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 113px;
-	height: 100%;
-	background: #f5f8fb;
-	content: '';
-}
-.schedule_image
-{
-	width: 65px;
-	height: 65px;
-	border-radius: 50%;
-	overflow: hidden;
-	-webkit-transform: translateY(4px);
-	-moz-transform: translateY(4px);
-	-ms-transform: translateY(4px);
-	-o-transform: translateY(4px);
-	transform: translateY(4px);
-}
-.schedule_list ul li
-{
-	padding-left: 24px;
-}
-.schedule_list ul li:not(:last-of-type)
-{
-	margin-bottom: 43px;
-}
-.schedule_content
-{
-	padding-left: 60px;
-}
-.schedule_time
-{
-	font-size: 14px;
-	font-weight: 700;
-	color: #7f66ff;
-}
-.schedule_title
-{
-	font-size: 24px;
-	font-weight: 700;
-	color: #0a2642;
-	margin-top: 2px;
-}
-.schedule_info
-{
-	font-size: 15px;
-	font-weight: 400;
-	color: #68727c;
-	margin-top: 6px;
-}
-.schedule_info a
-{
-	color: #7f66ff;
-	margin-left: 3px;
-}
-.schedule_info a:hover
-{
-	color: #ff9000;
-}
 
 /*********************************
 10. Speakers
@@ -1247,7 +1104,7 @@ section
 
 .speakers
 {
-	background: #f5f8fb;
+	background:#0f3152 ;
 	padding-top: 101px;
 	padding-bottom: 103px;
 }
@@ -1338,7 +1195,7 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(127,102,255,0.9);
+	background: rgba(103,186,217,0.7);
 }
 .cta_title h1
 {
@@ -1356,6 +1213,8 @@ section
 .cta_button
 {
 	margin-top: 23px;
+	background-color: #ffffff;
+
 }
 
 /*********************************
@@ -1368,9 +1227,9 @@ section
 }
 .footer_container
 {
-	background: #221831;
-	padding-top: 83px;
-	padding-bottom: 71px;
+	background: #0a2642;
+	padding-top: 53px;
+	padding-bottom: 61px;
 }
 .footer_text
 {
@@ -1388,92 +1247,6 @@ section
 .footer_column
 {
 	padding-top: 23px;
-}
-.newsletter_form
-{
-	display: block;
-	width: 100%;
-	margin-top: 55px;
-}
-.newsletter_input
-{
-	width: 100%;
-	height: 44px;
-	padding-left: 18px;
-	background: #463a58;
-	border: none;
-	outline: none;
-	font-size: 14px;
-	color: #ffffff;
-	font-weight: 400;
-	line-height: 44px;
-}
-.newsletter_input::-webkit-input-placeholder
-{
-	font-size: 12px !important;
-	font-weight: 400 !important;
-	color: #949ea9 !important;
-}
-.newsletter_input:-moz-placeholder
-{
-	font-size: 12px !important;
-	font-weight: 400 !important;
-	color: #949ea9 !important;
-}
-.newsletter_input::-moz-placeholder
-{
-	font-size: 12px !important;
-	font-weight: 400 !important;
-	color: #949ea9 !important;
-} 
-.newsletter_input:-ms-input-placeholder
-{ 
-	font-size: 12px !important;
-	font-weight: 400 !important;
-	color: #949ea9 !important;
-}
-.newsletter_input::input-placeholder
-{
-	font-size: 12px !important;
-	font-weight: 400 !important;
-	color: #949ea9 !important;
-}
-.newsletter_button
-{
-	position: relative;
-	width: 100%;
-	height: 59px;
-	border: none;
-	outline: none;
-	background: #7f66ff;
-	border-bottom: solid 3px #ffffff;
-	cursor: pointer;
-	margin-top: 13px;
-}
-.newsletter_button span
-{
-	font-size: 14px;
-	font-weight: 700;
-	color: #ffffff;
-	text-transform: uppercase;
-	letter-spacing: 0.2em;
-}
-.newsletter_button span img
-{
-	margin-left: 16px;
-	-webkit-transition: all 700ms ease;
-	-moz-transition: all 700ms ease;
-	-ms-transition: all 700ms ease;
-	-o-transition: all 700ms ease;
-	transition: all 700ms ease;
-}
-.newsletter_button:hover span img
-{
-	-webkit-transform: translateX(5px);
-	-moz-transform: translateX(5px);
-	-ms-transform: translateX(5px);
-	-o-transform: translateX(5px);
-	transform: translateX(5px);
 }
 .footer_title
 {
@@ -1495,7 +1268,8 @@ section
 }
 .footer_bar
 {
-	background: #190e2b;
+	background: #0a2642;
+	opacity: 0.9;
 }
 .footer_bar_content
 {
@@ -1507,3 +1281,77 @@ section
 	font-weight: 400;
 	color: #4e445d;
 }
+hr
+ {
+    border:0.5px inset;
+    color: grey;
+    display: block;
+    height: 0.1px;
+    margin: 0;
+
+ }
+ /*<!-- Speaker --> 
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_1.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">Maria Smith</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- Speaker -->  
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_2.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">James Williams</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- Speaker -->  
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_3.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">Michael Parker</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- Speaker -->  
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_4.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">Gabriel Kim</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- Speaker -->  
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_5.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">Christine Brown</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>
+
+				 <!-- Speaker --> 
+				<div class="col-xl-4 col-md-6">
+					<div class="speaker">
+						<div class="speaker_image"><img src="images/speaker_6.jpg" alt=""></div>
+						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
+							<div class="speaker_name"><a href="#">Laura White</a></div>
+							<div class="speaker_title">Random Post</div>
+						</div>
+					</div>
+				</div>*/

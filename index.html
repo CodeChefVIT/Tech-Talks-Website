@@ -67,23 +67,21 @@
 <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 <link rel="manifest" href="images/favicon/manifest.json">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+
 <title>Tech-Talks</title>
-<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Confpro template project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
-<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -101,10 +99,10 @@
 			<nav class="main_nav ml-auto">
 				<ul class="d-flex flex-row align-items-center justify-content-start">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="">About us</a></li>
-					<li><a href="">Speakers</a></li>
-					<li><a href="">Registration</a></li>
-					<li><a href="" style="margin-right: 20px">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#speak">Speakers</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#Footer" style="margin-right: 20px">Contact</a></li>
 				</ul>
 			</nav>
 
@@ -123,10 +121,10 @@
 				<nav class="menu_nav">
 					<ul class="d-flex flex-column align-items-center justify-content-start">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="">About us</a></li>
-						<li><a href="">Speakers</a></li>
-						<li><a href="">Registration</a></li>
-						<li><a href="">Contact</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#speak">Speakers</a></li>
+						<li><a href="#registration">Registration</a></li>
+						<li><a href="#Footer">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -152,11 +150,11 @@
 		
 		<!-- Home Slider -->
 		<div class="home_slider_container">
-			<div class="owl-carousel owl-theme home_slider">
+			
 				
 				<!-- Slide -->
 				<div class="slide">
-					<div class="background_image" style="background-image:url(images/index.jpg)"></div>
+					<div class="background_image" style="background-image:url(images/index1.jpeg);"></div>
 					<div class="home_container">
 						<div class="container">
 							<div class="row">
@@ -164,25 +162,34 @@
 									<div class="home_content">
 										<div class="home_title">
 											<h1>
-												<span>2020</span>
 												<span>Tech-Talks</span>
+												<span>2020</span>
 											</h1>
 										</div>
-										<div class="home_info_container">
+
+
+										<div class="home_info_container" >
 											<div class="home_info">
 												<ul class="d-flex flex-row align-items-center justify-content-start">
-													<li>5 October 2020</li>
+													<li>2nd October 2020</li>
 												</ul>
 											</div>
 										</div>
-										<div class="button button_1 home_button"><a href="#"><span>Read More<img src="images/arrow_2.png" alt=""></span></a></div>
+										<div class="home_info_container mt-2">
+											<div class="home_info">
+												<ul class="d-flex flex-row align-items-center justify-content-start">
+													<li>Time-(14:00-18:00)</li>
+												</ul>
+											</div>
+										</div>
+										<div class="button button_1 home_button" style="border-bottom: 1px solid #67bad9;"><a href="#about"><span>Read More</span></a></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			
 
 
 		</div>
@@ -191,7 +198,7 @@
 	<!-- Timer -->
 
 	<div class="timer_section">
-		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/timer.jpg" data-speed="0.8"></div>
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/qaz.jpg" data-speed="0.8"></div>
 		<div class="timer_overlay"></div>
 		<div class="container">
 			<div class="row">
@@ -222,15 +229,15 @@
 	</div>
 
 	<!-- Intro -->
-
-	<div class="intro">
+   <section id="about">
+    <div class="intro">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
 					<div class="section_title_container text-center">
-						<div class="section_title"><h1>About the Event</h1></div>
+						<div class="section_title"style="color: white;" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><h1>About the Event</h1></div>
 					</div>
-					<div class="intro_text text-center">
+					<div class="intro_text text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 					</div>
 					
@@ -238,6 +245,8 @@
 			</div>
 		</div>
 	</div>
+   </section>
+	<hr>
 
 	<!-- Tabs Section -->
 
@@ -246,98 +255,64 @@
 			<div class="row">
 				<div class="col">
 					<div class="section_title_container text-center">
-						<div class="section_subtitle">see what's all about</div>
-						<div class="section_title"><h1>The Topics</h1></div>
+						<div class="section_subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">see what's all about</div>
+						<div class="section_title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><h1>The Topics</h1></div>
 					</div>
 					<div class="tabs_container">
 						<div class="tabs d-flex flex-row align-items-center justify-content-start flex-wrap">
-							<div class="tab active">01. Digital Marketing</div>
-							<div class="tab">02. Marketing Strategy</div>
-							<div class="tab">03. Cyber Security</div>
-							<div class="tab">04. Machine Learning</div>
-							<div class="tab">05. Web Development</div>
-							<div class="tab">06. App Development</div>
+							<div class="tab active" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">01. Blockchain</div>
+							<div class="tab" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">02. Security</div>
+							<div class="tab" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">03. Cloud Computing</div>
+							<div class="tab" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">04. Artificial Intelligence</div>
 						</div>
 						<div class="tab_panels">
 							<div class="tab_panel active">
 								<div class="row">
-									<div class="col-lg-7">
+									<div class="col">
 										<div class="tab_panel_content">
-											<div class="tab_title"><h3>Digital Marketing - Studies for beginners</h3></div>
+											<div class="tab_title" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"><h3>01. Blockchain</h3></div>
 											<div class="tab_text">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
+												<p data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
 											</div>
 											<div class="tab_link"><a href="#">Read More</a></div>
 										</div>
 									</div>
-									<div class="col-lg-5 tab_col">
-										<div class="tab_panel_image"><img src="images/tabs.jpg" alt=""></div>
-									</div>
-								</div>
-							</div>
-							<div class="tab_panel">
-								<div class="row">
-									<div class="col-lg-6">
-										<div class="tab_panel_content">
-											<div class="tab_title"><h3>02. Marketing Strategy</h3></div>
-											<div class="tab_text">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
-											</div>
-											<div class="tab_link"><a href="#">Read More</a></div>
-										</div>
-									</div>
-									<div class="col-lg-6 tab_col">
-										<div class="tab_panel_image"><img src="images/tabs.jpg" alt=""></div>
-									</div>
-								</div>
-							</div>
-							<div class="tab_panel">
-								<div class="row">
-									<div class="col-lg-7">
-										<div class="tab_panel_content">
-											<div class="tab_title"><h3>03. Cyber Security</h3></div>
-											<div class="tab_text">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
-											</div>
-											<div class="tab_link"><a href="#">Read More</a></div>
-										</div>
-									</div>
-									<div class="col-lg-5 tab_col">
-										<div class="tab_panel_image"><img src="images/tabs.jpg" alt=""></div>
-									</div>
+									
 								</div>
 							</div>
 							<div class="tab_panel">
 								<div class="row">
 									<div class="col">
 										<div class="tab_panel_content">
-											<div class="tab_title"><h3>04. Machine Learning</h3></div>
+											<div class="tab_title" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"><h3>02. Security</h3></div>
 											<div class="tab_text">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
+												<p data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
 											</div>
 											<div class="tab_link"><a href="#">Read More</a></div>
 										</div>
 									</div>
+									
 								</div>
 							</div>
 							<div class="tab_panel">
 								<div class="row">
 									<div class="col">
 										<div class="tab_panel_content">
-											<div class="tab_title"><h3>05. Web Development</h3></div>
+											<div class="tab_title" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"><h3>03. Cloud Computing</h3></div>
 											<div class="tab_text">
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
 											</div>
 											<div class="tab_link"><a href="#">Read More</a></div>
 										</div>
 									</div>
+									
 								</div>
 							</div>
 							<div class="tab_panel">
 								<div class="row">
 									<div class="col">
-										<div class="tab_panel_content">
-											<div class="tab_title"><h3>06. App Development</h3></div>
+										<div class="tab_panel_content" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+											<div class="tab_title"><h3>04. Artificial Intelligence </h3></div>
 											<div class="tab_text">
 												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Etiam pretium, nibh vitae varius ultricies, tellus diam gravida elit, vel rhoncus eros eros sit amet ipsum. Cras cursus pellentesque tortor, vitae efficitur nisi laoreet in. Suspendisse libero erat, aliquet eu maximus ac, dignissim vitae ex. Nam vel euismod risus, tempor venenatis nunc.</p>
 											</div>
@@ -346,6 +321,8 @@
 									</div>
 								</div>
 							</div>
+							
+							
 						</div>
 					</div>
 				</div>
@@ -353,93 +330,30 @@
 		</div>
 	</div>
 
-	
+	<hr style="color: white;margin-top: none;margin-bottom: none;">
     <!-- Speakers -->
-
+   <section id="speak">
 	<div class="speakers">
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="section_title_container text-center">
-						<div class="section_subtitle">see what's all about</div>
-						<div class="section_title"><h1>WHO’S SPEAKING</h1></div>
+						<div class="section_subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">see what's all about</div>
+						<div class="section_title" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><h1>WHO’S SPEAKING</h1></div>
 					</div>
 				</div>
 			</div>
+		    <!-- Speaker --> 
 			<div class="row speakers_row">
 				
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_1.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">Maria Smith</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_2.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">James Williams</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_3.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">Michael Parker</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_4.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">Gabriel Kim</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_5.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">Christine Brown</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Speaker -->
-				<div class="col-xl-4 col-md-6">
-					<div class="speaker">
-						<div class="speaker_image"><img src="images/speaker_6.jpg" alt=""></div>
-						<div class="speaker_info d-flex flex-column align-items-start justify-content-center">
-							<div class="speaker_name"><a href="#">Laura White</a></div>
-							<div class="speaker_title">Random Post</div>
-						</div>
-					</div>
-				</div>
+				<h1 class="temp" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Will be announced soon!</h1>
 
 			</div>
 		</div>
 	</div>
-
-	<!-- CTA -->
-
+   </section>
+	<!-- Registration Section -->
+   <section id="registration">
 	<div class="cta">
 		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/cta.jpg" data-speed="0.8"></div>
 		<div class="cta_overlay"></div>
@@ -447,19 +361,19 @@
 			<div class="row">
 				<div class="col">
 					<div class="cta_content text-center">
-						<div class="cta_title text-center"><h1>Registeration will open soon!</h1></div>
-						<div class="cta_text text-center">
+						<div class="cta_title text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><h1>Registeration will open soon!</h1></div>
+						<div class="cta_text text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 						</div>
-						<div class="button button_3 cta_button"><a href="#"><span>Register<img src="images/arrow.png" alt=""></span></a></div>
+						<div class="button button_3 cta_button" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"><a href="#" style="color: black;"><span>Register</span></a></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+   </section>
 	<!-- Footer -->
-
+   <section id="Footer">
 	<footer class="footer">
 		<div class="footer_container">
 			<div class="container">
@@ -469,16 +383,16 @@
 					<div class="col-lg-4 footer_col">
 
 						<!-- Logo -->
-						<div class="logo">
+						<div class="logo" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 							<a href="#">
 								<img src="images/CC logo.png"
           alt="CodeChef-VIT" style="padding-bottom:5px;margin-top:0px;width: 130px;height: 50px;" class="img-fluid logo mt-3">
 							</a>
 						</div>
-						<div class="footer_text">
+						<div class="footer_text" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
-						<div class="social footer_social">
+						<div class="social footer_social" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
 							<ul class="d-flex flex-row align-items-center justify-content-start">
 						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
@@ -495,7 +409,9 @@
 
 				</div>
 			</div>
+
 		</div>
+        <hr>
 		<div class="footer_bar">
 			<div class="container">
 				<div class="row">
@@ -510,7 +426,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Mad
 			</div>
 		</div>
 	</footer>
-
+   </section>
 </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -521,11 +437,16 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Mad
 <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
 <script src="plugins/greensock/animation.gsap.min.js"></script>
 <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
 <script src="plugins/colorbox/jquery.colorbox-min.js"></script>
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/progressbar/progressbar.min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="js/animation.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
