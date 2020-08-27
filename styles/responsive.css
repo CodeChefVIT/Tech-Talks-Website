@@ -216,6 +216,16 @@
 	{
 		font-size: 48px;
 	}
+	.slide > .background_image{
+		background-image: url(../images/MICC.jpeg) !important;
+		background-position: right;
+	}
+.temp
+{
+	margin-left: 45px;
+	font-size: 25px;
+
+}
 }
 
 /************
