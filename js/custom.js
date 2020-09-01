@@ -147,12 +147,12 @@ $(document).ready(function()
     	if($('.timer').length)
     	{
     		// Uncomment line below and replace date
-	    	// var target_date = new Date("Dec 7, 2019").getTime();
+	    	 var target_date = new Date("October 2, 2020 14:00:00").getTime();
 
 	    	// comment lines below
-	    	var date = new Date();
-	    	date.setDate(date.getDate() + 3);
-	    	var target_date = date.getTime();
+	    	//var date = new Date();
+	    	//date.setDate(date.getDate() + 3);
+	    	//var target_date = date.getTime();
 	    	//----------------------------------------
 	 
 			// variables for time units

@@ -217,14 +217,24 @@
 		font-size: 48px;
 	}
 	.slide > .background_image{
-		background-image: url(../images/MICC.jpeg) !important;
-		background-position: right;
+		
+		background-position:right !important;
 	}
 .temp
 {
 	margin-left: 45px;
 	font-size: 25px;
 
+}
+.home_button
+{
+	margin-left: 23% !important;
+
+}
+.iframe
+{
+	width:100% !important; 
+	height:315px !important;
 }
 }
 
