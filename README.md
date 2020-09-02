@@ -1,7 +1,7 @@
 <p align="center"><a href="http://www.codechefvit.com" target="_blank"><img src="https://s3.amazonaws.com/codechef_shared/sites/all/themes/abessive/logo-3.png" title="CodeChef-VIT" alt="Codechef-VIT"></a>
 </p>
 
-# Project Title
+ # Tech Talks
 
 > <Subtitle>
 > Include project description here.
@@ -14,7 +14,7 @@
 
 
 ## Features
-- Insert list of features here
+- Contains all the necessary details regarding the event.
 
 
 
@@ -22,18 +22,11 @@
 ## Screenshots
 <img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
 
-## Instructions to run
 
-```
-$ git clone https://github.com/CodeChefVIT/<Project>
-$ cd <Project>
-$ pip3 install -r requirements.txt
-$ python3 manage.py runserver
-```
 
 ## Contributors
-- <a href="https://github.com/<Contributor>">Contributor Name</a>
-- <a href="https://github.com/<Contributor>">Contributor Name</a>
+- <a href="https://github.com/<Contributor>">Yasharth Tripathi</a>
+
 
 ## License
 
