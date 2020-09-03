@@ -46,6 +46,9 @@ body
 	font-weight: 400;
 	background: #FFFFFF;
 	color: #a5a5a5;
+	overflow-x: hidden;
+    overflow-y: visible;
+    scroll-behavior: smooth;
 }
 div
 {
@@ -261,9 +264,11 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/Index2.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+
 }
 .nopadding
 {
@@ -1232,7 +1237,7 @@ section
 .footer_container
 {
 	background: #0a2642;
-	padding-top: 53px;
+	padding-top: 13px;
 	padding-bottom: 61px;
 }
 .footer_text
@@ -1240,9 +1245,17 @@ section
 	margin-top: 50px;
 	padding-left: 8px;
 }
+.footer_text_right{
+   
+   padding-right: 8px;
+   padding-top:120px;
+}
+.footer_text_right p{
+   color: whitesmoke;
+ }
 .footer_text p
 {
-	color: #a1acb7;
+	color: whitesmoke;
 }
 .footer_social
 {
@@ -1486,4 +1499,37 @@ h4{text-align:center;margin:30px 0;color:#444}
 }
 
 
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.col-md-5:hover .overlay {
+  opacity: 1;
+}
+
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 40px;
+  position: relative;
+  top: 85%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+/* When you move the mouse over the icon, change color */
+.icon>i:hover {
+  color: #eee;
+}
 
