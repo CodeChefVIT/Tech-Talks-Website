@@ -408,7 +408,7 @@ section
 	position: fixed;
 	top: 22px;
 	left: 23px;
-	width: calc(100% - 48px);
+	width: calc(100vw - 48px);
 	background: #0a2642;
 	z-index: 100;
 	border-bottom: solid 2px #67bad9;
