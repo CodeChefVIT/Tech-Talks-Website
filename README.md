@@ -19,7 +19,7 @@
 
 
 ## Screenshots
-<img src="https://github.com/akshatvg/common-entry-test/raw/master/static/img/header.png" alt="Project Screenshots">
+<img src="https://github.com/CodeChefVIT/Tech-Talks-Website/blob/master/images/Screenshot%20.png" alt="Project Screenshots">
 
 ## Tech Stack Used
 - HTML
