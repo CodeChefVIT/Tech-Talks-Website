@@ -198,7 +198,14 @@
 
 @media only screen and (max-width: 768px)
 {
-	
+	.footer_text_right
+	{
+		padding-right: 8px;
+		padding-top: 0;
+		padding-bottom: 0px;
+		margin-right: 10px;
+
+	}
 }
 
 /************
