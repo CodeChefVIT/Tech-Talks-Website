@@ -111,8 +111,8 @@
 @media only screen and (max-width: 1024px)
 {
 	.coding > .overlay{
-	width:92% !important;
-	left:4% !important;
+	width:96% !important;
+	left:3% !important;
 	right: 2% !important;
 }
 }
@@ -189,7 +189,42 @@
 
 @media only screen and (max-width: 880px)
 {
-	
+	.icon{
+		top:83% !important;
+		font-size:30px;
+	}
+	.blockchain>.overlay{
+	width:89.6% !important;
+	left:5.5% !important;
+	right: 2% !important;
+    }
+    .blockchain>.overlay>.icon{
+    	left:35% !important;
+    }
+.ai>.overlay{
+	width:88.5% !important;
+	left:6% !important;
+	right: 2% !important;
+}
+.ai>.overlay>.icon{
+	left:40% !important;
+}
+.coding > .overlay{
+	width:89% !important;
+	left:5.3% !important;
+	right: 2% !important;
+}
+.coding > .overlay>.icon{
+	left: 40% !important;
+}
+.design > .overlay{
+	width:88.5% !important;
+	left:5.4% !important;
+	right: 2% !important;
+}
+.design > .overlay>.icon{
+	left:40% !important;
+}
 }
 
 /************
@@ -203,8 +238,6 @@
 		padding-right: 8px;
 		padding-top: 0;
 		padding-bottom: 0px;
-		margin-right: 10px;
-
 	}
 }
 
@@ -252,7 +285,12 @@
 }
 .footer_text_right col-md-4 p
 {
-   text-align: center;
+   text-align:center;
+}
+.tab_text p
+{
+	
+	font-size: 15px;
 }
 }
 
@@ -396,7 +434,26 @@
 
 @media only screen and (max-width: 480px)
 {
-	
+	.blockchain>.overlay{
+	width:92.2% !important;
+	left:4.3% !important;
+	right: 2% !important;
+}
+.ai>.overlay{
+	width:90% !important;
+	left:6% !important;
+	right: 2% !important;
+}
+.coding > .overlay{
+	width:91.8% !important;
+	left:4.3% !important;
+	right: 2% !important;
+}
+.design > .overlay{
+	width:92% !important;
+	left:4.3% !important;
+	right: 2% !important;
+}
 }
 
 /************
@@ -405,7 +462,11 @@
 
 @media only screen and (max-width: 479px)
 {
-	
+	.reverse-cols .fusion-row {
+        display: flex !important;
+        flex-flow: wrap !important;
+        flex-direction: column-reverse !important;
+}
 }
 
 /************
@@ -414,12 +475,27 @@
 
 @media only screen and (max-width: 400px)
 {
-	.icon {
+    .icon {
 	font-size: 25px;
 }
+.blockchain>.overlay{
+	width:88.5% !important;
+	left:6% !important;
+	right: 2% !important;
+}
+.ai>.overlay{
+	width:88.5% !important;
+	left:6% !important;
+	right: 2% !important;
+}
 .coding > .overlay{
-	width:90% !important;
-	left:4% !important;
+	width:89% !important;
+	left:5.3% !important;
+	right: 2% !important;
+}
+.design > .overlay{
+	width:88.5% !important;
+	left:5.4% !important;
 	right: 2% !important;
 }
 }
