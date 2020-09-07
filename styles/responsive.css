@@ -292,6 +292,10 @@
 	
 	font-size: 15px;
 }
+.footer p
+{
+	text-align: center;
+}
 }
 
 /************
@@ -510,4 +514,14 @@
     .courseY {
         height: 35vw;;
     }
+}
+
+
+
+@media only screen and (max-width: 426px)
+{
+.ts-promo-number{
+	font-size: 50px;
+}
+
 }

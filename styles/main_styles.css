@@ -1397,7 +1397,7 @@ h4{text-align:center;margin:30px 0;color:#444}
 .main-timeline .timeline-content:before{content:"";width:70%;height:100%;border:3px solid #ec496e;border-top:none;border-right:none;position:absolute;bottom:-13px;left:35px}
 .main-timeline .timeline-content:after{content:"";width:37px;height:3px;background:#ec496e;position:absolute;top:13px;left:0}
 .main-timeline .title{font-size:20px;font-weight:600;color:#ec496e;text-transform:uppercase;margin:0 0 5px}
-.main-timeline .description{display:inline-block;font-size:16px;color:#404040;line-height:20px;letter-spacing:1px;margin:0}
+.main-timeline .description{display:inline-block;font-size:25px;color:#404040;line-height:22px;letter-spacing:1px;margin:0}
 .main-timeline .timeline:nth-child(even) .timeline-icon{left:auto;right:30%}
 .main-timeline .timeline:nth-child(even) .timeline-icon:before{right:auto;left:-100px}
 .main-timeline .timeline:nth-child(even) .timeline-icon:after{right:auto;left:-30px}
