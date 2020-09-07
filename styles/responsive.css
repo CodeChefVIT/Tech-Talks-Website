@@ -502,6 +502,10 @@
 	left:5.4% !important;
 	right: 2% !important;
 }
+.blockchain>.overlay>.icon{
+	left: 43% !important;
+}
+
 }
 
 .courseY
@@ -522,6 +526,17 @@
 {
 .ts-promo-number{
 	font-size: 50px;
+}
+.footer_social{
+	left: 3% !important ;
+}
+.featurette-heading{
+	font-size: 30px;
+}
+.lead 
+{
+	font-size: 18px;
+
 }
 
 }
