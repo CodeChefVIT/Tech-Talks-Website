@@ -1548,7 +1548,8 @@ h4{text-align:center;margin:30px 0;color:#444}
     font-weight: 400;
 }
 .data-bg-image{
-	background:url(../images/bgh.jpg);
+	background-color: #004168;
+	
 }
 .ts-promo-number{
 	font-size: 72px;
